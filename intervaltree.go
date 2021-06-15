@@ -1,4 +1,4 @@
-package IntervalTree
+package intervaltree
 
 import (
 	"fmt"
