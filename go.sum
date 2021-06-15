@@ -1,0 +1,8 @@
+github.com/RomainAgostinelli/binarytree v0.0.0-20210614124034-d7e5b03c666a h1:PFKeiFsKtnr6ns+F4Epf2qBrbc0HdUN9iWdmdaRRjKE=
+github.com/RomainAgostinelli/binarytree v0.0.0-20210614124034-d7e5b03c666a/go.mod h1:s3dPuc5TTXYjut0FNkDoskSFbqSb5DonT0fiAI5gIvs=
+github.com/RomainAgostinelli/binarytree v0.0.0-20210614235007-ef1af68b8fa0 h1:vyGca5xyBD4+21gFWkRXTuuAxPnojPMIP7f1RBT7z+I=
+github.com/RomainAgostinelli/binarytree v0.0.0-20210614235007-ef1af68b8fa0/go.mod h1:s3dPuc5TTXYjut0FNkDoskSFbqSb5DonT0fiAI5gIvs=
+github.com/RomainAgostinelli/bst v0.0.0-20210614235618-89a452cdfbf3 h1:M9+8ltHY6WxNQSB+hTkwy5OOBbBnR9yFYsUUPVisxQQ=
+github.com/RomainAgostinelli/bst v0.0.0-20210614235618-89a452cdfbf3/go.mod h1:o8KB37aEcFHKcCoscQBP50KdL7lyjJsuCxK8Mg90nUU=
+github.com/RomainAgostinelli/bst v0.0.0-20210615010801-530129be2cbd h1:dFGiQArWDi2SwOz4VKgh22OwIIgSwvN7h/Lw+VkeXQQ=
+github.com/RomainAgostinelli/bst v0.0.0-20210615010801-530129be2cbd/go.mod h1:o8KB37aEcFHKcCoscQBP50KdL7lyjJsuCxK8Mg90nUU=
