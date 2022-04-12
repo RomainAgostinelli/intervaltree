@@ -3,6 +3,6 @@ module github.com/ag0st/intervaltree
 go 1.18
 
 require (
-	github.com/RomainAgostinelli/binarytree v0.0.0-20210614235007-ef1af68b8fa0
-	github.com/RomainAgostinelli/bst v0.0.0-20210615010801-530129be2cbd // indirect
+	github.com/ag0st/binarytree v0.0.0-20220412222724-22db34257cac
+	github.com/ag0st/bst v0.0.0-20220412222951-523e62820e13
 )

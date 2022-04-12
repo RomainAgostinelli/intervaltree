@@ -2,8 +2,8 @@ package intervaltree
 
 import (
 	"fmt"
-	"github.com/RomainAgostinelli/binarytree"
-	"github.com/RomainAgostinelli/bst"
+	"github.com/ag0st/binarytree"
+	"github.com/ag0st/bst"
 	"log"
 	"sort"
 )
@@ -147,13 +147,17 @@ func newElt(intervals []*Interval, xMid int) *elt {
 	copy(intervalTreeElt.leftSorted[:], intervals)
 	copy(intervalTreeElt.rightSorted[:], intervals)
 	// sort start
-	sort.SliceStable(intervalTreeElt.leftSorted[:], func(i, j int) bool {
-		return intervalTreeElt.leftSorted[i].lessStart(intervalTreeElt.leftSorted[j])
-	})
+	sort.SliceStable(
+		intervalTreeElt.leftSorted[:], func(i, j int) bool {
+			return intervalTreeElt.leftSorted[i].lessStart(intervalTreeElt.leftSorted[j])
+		},
+	)
 	// sort end
-	sort.SliceStable(intervalTreeElt.rightSorted[:], func(i, j int) bool {
-		return intervalTreeElt.rightSorted[i].lessEnd(intervalTreeElt.rightSorted[j])
-	})
+	sort.SliceStable(
+		intervalTreeElt.rightSorted[:], func(i, j int) bool {
+			return intervalTreeElt.rightSorted[i].lessEnd(intervalTreeElt.rightSorted[j])
+		},
+	)
 	return intervalTreeElt
 }
 
@@ -262,9 +266,11 @@ func buildBST(intervals []*Interval) *bst.BST {
 		allPoints[length+i] = &Point{in.End, []*Interval{in}}
 	}
 
-	sort.Slice(allPoints, func(i, j int) bool {
-		return allPoints[i].CompareTo(allPoints[j]) < 0
-	})
+	sort.Slice(
+		allPoints, func(i, j int) bool {
+			return allPoints[i].CompareTo(allPoints[j]) < 0
+		},
+	)
 
 	allPoints = removeDuplicateByFusion(allPoints)
 	return bst.NewBSTReady(allPoints)
